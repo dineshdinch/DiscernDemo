@@ -4,4 +4,4 @@ ant run
 
 echo "Final step in shell script"
 
-echo ${BUILD_NUMBER}
+echo ${GIT_URL}
