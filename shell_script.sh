@@ -2,4 +2,6 @@
 
 cd C:/Users/Dinesh/.jenkins/workspace/git-checkout
 
-ant run
+javac DiscernDemo.java
+
+java DiscernDemo
