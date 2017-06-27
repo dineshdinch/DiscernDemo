@@ -1,4 +1,4 @@
-<project name="Jenkins Demo" default="jar" basedir=".">
+<project name="Jenkins Demo" default="run" basedir=".">
 
     <echo message="This is First Ant Build in Jenkins Using Git" />
 	
@@ -14,12 +14,16 @@
 	<target name="compile" depends="init">
 		<javac srcdir="${src}" destdir="${build}" />
 	</target>
-
+	
+	<!-- <target name="run" depends="compile">
+		<echo message="Into run" />
+		<java classname="DiscernDemo" classpath="${build}" fork="true" />
+	</target> -->
+ 	
 	<target name="jar" depends="compile">
-		<jar basedir="${build}" destfile="${dist}" >
+		<jar basedir="${build}" destfile="${dist}/discern_demo.jar" >
 			<manifest>
 				<attribute name="Main-Class" value="DiscernDemo" />
-				<attribute name="Class-Path" value="${build}" />
 			</manifest>
 		</jar>	
 	</target>
