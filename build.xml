@@ -18,6 +18,4 @@
 		<java classname="DiscernDemo" classpath="${build}" fork="true" />
 	</target>
 	
-	<echo message="Final step of ANT build" />
-	
 </project>
