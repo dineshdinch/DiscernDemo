@@ -1,7 +1,5 @@
 #!/bin/bash
 
-ant run
+ant jar
 
 echo "Final step in shell script"
-
-echo ${GIT_URL}
